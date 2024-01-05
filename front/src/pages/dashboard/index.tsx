@@ -5,6 +5,7 @@ import { StyledHeader, StyledFirstSection, StyledSecondSection, StyledThirdSecti
 
 export const Dashboard = () => {
     const [projects, setProjects] = useState([]);
+    console.log(projects)
     // const img = projects[0].owner.avatar_url
     useEffect(() => {
       const fetchGitHubProjects = async () => {
@@ -29,11 +30,11 @@ export const Dashboard = () => {
                 <h1>Henrique Annicchino</h1>
             </div>
             <div>
-                <a href="https://w.app/nYQSLN">Falar no Whatsapp</a>
-                <a href="https://github.com/Henriqueamfreitas">
+                <a href="https://w.app/nYQSLN" target="blank">Falar no Whatsapp</a>
+                <a href="https://github.com/Henriqueamfreitas" target="blank">
                     <img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_640.png" alt="Github" />
                 </a>
-                <a href="https://www.linkedin.com/in/henrique-annicchino/">
+                <a href="https://www.linkedin.com/in/henrique-annicchino/" target="blank">
                     <img src="https://cdn.pixabay.com/photo/2017/08/22/11/56/linked-in-2668700_640.png" alt="Linkedin" />
                 </a>
             </div>
@@ -66,7 +67,7 @@ export const Dashboard = () => {
                     No linkedIn sempre estou <b>compartilhando</b> meus processos diários para desenvolver esses 
                     projetos e estou disposto a trocar algumas ideias por lá
                     </p>
-                    <a href="https://www.linkedin.com/in/henrique-annicchino/">Acessar perfil no linkedin</a>
+                    <a href="https://www.linkedin.com/in/henrique-annicchino/" target="blank">Acessar perfil no linkedin</a>
                 </div>
                 <div>
                     <h2>Projetos</h2>
@@ -76,7 +77,7 @@ export const Dashboard = () => {
             </StyledThirdSection>
         </main>
         <StyledFooter>
-            Obrigado por acessar!
+            Muito obrigado por acessar!
         </StyledFooter>
         </>
     )

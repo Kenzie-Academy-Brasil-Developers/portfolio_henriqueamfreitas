@@ -4,7 +4,7 @@ type GitHubRepository = {
     language: string;
     description: string
     html_url: string;
-    ssh_url: string;
+    svn_url: string;
     id: number
   };
   
@@ -21,7 +21,7 @@ export function ProjectList({ allProjects }: { allProjects: GitHubRepository[] }
                             language={project.language}
                             description={project.description}
                             html_url={project.html_url}
-                            ssh_url={project.ssh_url}
+                            svn_url={project.svn_url}
                             id={project.id}
                         ></ProjectCard>
                     )
